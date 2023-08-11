@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>?!?!?!?!</title>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <button onclick="speak();">Allow Audio</button>
+    <div class="container">
+      <h1>Voice Assistant by Muhammad</h1>
+      <form onsubmit="event.preventDefault();
+      conversationUserAdd(document.getElementById('input-text').value);
+      open_ai();
+      document.getElementById('input-text').value='';
+      ">
+      <input type="text" id="input-text" placeholder="Ask Me!" />
+      <button id="submit-button">Submit</button>
+      </form>
+      <div id="chat-container"></div>
+    </div>
+  </body>
+    
+</body>
+</html>
